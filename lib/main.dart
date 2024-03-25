@@ -20,13 +20,16 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             color: Colors.red,
             width: largura,
             height: altura,
+          ),
+          SizedBox(
+            height: 50,
           ),
           Container(
             color: Colors.blue,
