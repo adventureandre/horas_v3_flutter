@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(  MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
+
+  double largura = 100;
+  double altura = 100;
 
   // This widget is the root of your application.
   @override
@@ -16,7 +19,21 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Container(),
+      home: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            color: Colors.red,
+            width: largura,
+            height: altura,
+          ),
+          Container(
+            color: Colors.blue,
+            width: largura,
+            height: altura,
+          )
+        ],
+      ),
     );
   }
 }
