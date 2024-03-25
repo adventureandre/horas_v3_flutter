@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             color: Colors.red,
@@ -29,6 +30,11 @@ class MyApp extends StatelessWidget {
           ),
           Container(
             color: Colors.blue,
+            width: largura,
+            height: altura,
+          ),
+          Container(
+            color: Colors.yellow,
             width: largura,
             height: altura,
           )
